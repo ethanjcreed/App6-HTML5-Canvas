@@ -41,10 +41,12 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 // the below code is a call of the canvas element and then asking the computer to write my name
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.font = "30px Arial";
-ctx.fillText("Ethan", 10, 50);
+function myName(){
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.font = "30px Arial";
+	ctx.fillText("Ethan", 10, 50);
+}
 	
 </script>
 
@@ -78,6 +80,8 @@ canvas { border: 1px solid black; }
 	
 <!-- this portion of code sets up the canvas to be displayed -->
 <canvas id="myCanvas" width="200" height="100"></canvas>
+<!-- this is a button that onece you click it it writes my name -->
+<a  onclick="myName();" class="w3-btn w3-black"> Name</a>
 	
 </div>
 	
