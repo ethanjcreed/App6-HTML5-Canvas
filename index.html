@@ -40,12 +40,11 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
-// the below code is a call of the canvas element and then asking the computer to draw a diagonal line
+// the below code is a call of the canvas element and then asking the computer to write my name
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-ctx.moveTo(0, 0);
-ctx.lineTo(200, 100);
-ctx.stroke();	
+ctx.font = "30px Arial";
+ctx.fillText("Ethan", 10, 50);
 	
 </script>
 
@@ -79,6 +78,7 @@ canvas { border: 1px solid black; }
 	
 <!-- this portion of code sets up the canvas to be displayed -->
 <canvas id="myCanvas" width="200" height="100"></canvas>
+	
 </div>
 	
 <div id="content" class="w3-container">
