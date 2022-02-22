@@ -60,6 +60,12 @@ function draw_rectangle() {
 	var img = document.getElementById("myImage");
 	ctx.drawImage(img, 10, 10);
 */
+	
+function clear(){
+	var clear_canvas = document.getElementById("myCanvas");
+  	var clear_context = clear_canvas.getContext("2d");
+  	clear_context.clearRect(0, 0, canvas.width, canvas.height0);
+}
 </script>
 
 
@@ -111,6 +117,9 @@ canvas { border: 1px solid black; }
 	
 	<!-- this button puts Bevo on the screen -->	
 	<a  onclick="myImage();" class="w3-btn w3-black"> Bevo</a>
+	
+	<!-- this button clears the canvas -->	
+	<a  onclick="clear();" class="w3-btn w3-black"> Clear</a>
 </div>
 	
 		
