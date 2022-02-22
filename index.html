@@ -57,7 +57,7 @@ function draw_rectangle() {
 function myImage(){
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	var img = document.getElementById("image");
+	var img = document.getElementById("myImage");
 	ctx.drawImage(img, 10, 10);
 	
 </script>
@@ -88,26 +88,31 @@ canvas { border: 1px solid black; }
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot"> 
+	
 	<h1>App6---HTML5-Canvas</h1>
 	
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Click me!</p>
-<!-- this portion of code sets up the canvas to be displayed -->
-<canvas id="myCanvas" width="200" height="100"></canvas>
 
-<!-- this is the image that I call in the myImage funciton -->
-<image id = "myImage" src="https://cdn.hswstatic.com/gif/Texas-longhorn.jpg" alt="The Scream" width="100" height="50">
+	<!-- this portion of code sets up the canvas to be displayed -->
+	<canvas id="myCanvas" width="200" height="100"></canvas>
 
-<!-- this is a button that onece you click it it writes my name -->
-<a  onclick="myName();" class="w3-btn w3-black"> Name</a>
+	<!-- this is the image that I call in the myImage funciton PROBLEM, WHERE TO PUT-->
+	<!--<image id = "myImage" src="https://cdn.hswstatic.com/gif/Texas-longhorn.jpg" alt="The Cow" width="100" height="50"> -->
+</div>
+
+<div id="buttons" class="w3-container">
+	<!-- this is a button that onece you click it it writes my name -->
+	<a  onclick="myName();" class="w3-btn w3-black"> Name</a>
 	
-<!-- this button draws a filled in rectangle -->	
-<a  onclick="draw_rectangle();" class="w3-btn w3-black"> Rectangle</a>
+	<!-- this button draws a filled in rectangle -->	
+	<a  onclick="draw_rectangle();" class="w3-btn w3-black"> Rectangle</a>
 	
-<!-- this button puts Bevo on the screen -->	
-<a  onclick="myImage();" class="w3-btn w3-black"> Bevo</a>
+	<!-- this button puts Bevo on the screen -->	
+	<a  onclick="myImage();" class="w3-btn w3-black"> Bevo</a>
+</div>
+	
 		
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
