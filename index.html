@@ -54,12 +54,12 @@ function draw_rectangle() {
   	rectangle_context.fillRect(50, 25, 150, 100);
 }
 // the below code should set a function to be called that produces an image
-/* function myImage(){
+window.onload = function myImage(){
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	var img = document.getElementById("myImage");
 	ctx.drawImage(img, 10, 10);
-*/
+
 	
 function clear(){
 	var clear_canvas = document.getElementById("myCanvas");
@@ -119,7 +119,7 @@ canvas { border: 1px solid black; }
 	<a  onclick="draw_rectangle();" class="w3-btn w3-black"> Rectangle</a>
 	
 	<!-- this button puts Bevo on the screen -->	
-	<a  onclick="myImage();" class="w3-btn w3-black"> Bevo</a>
+	<a  onclick="window.onload();" class="w3-btn w3-black"> Bevo</a>
 	
 	<!-- this button clears the canvas -->	
 	<a  onclick="clear();" class="w3-btn w3-black"> Clear</a>
