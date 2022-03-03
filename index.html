@@ -57,10 +57,11 @@ function draw_rectangle() {
 function myImage(){
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	var img = document.getElementById("myImage");
-	ctx.drawImage(img, 10, 10);
-	//this is the image that I call in the myImage funciton PROBLEM, WHERE TO PUT
-        <image id = "myImage" src="https://cdn.hswstatic.com/gif/Texas-longhorn.jpg" alt="The Cow" width="100" height="50">
+	var bevo = new Image();
+	bevo.src = "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F24%2F2020%2F12%2F03%2FGettyImages-1045641844-2000.jpg";
+	bevo.onload = function() {
+	c_context.drawImage(bevo, 100, 20, 100, 100)
+	}
 }
 
 	
