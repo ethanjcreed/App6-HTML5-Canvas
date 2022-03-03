@@ -56,11 +56,11 @@ function draw_rectangle() {
 // the below code should set a function to be called that produces an image
 function myImage(){
 	var b = document.getElementById("myCanvas");
-	var ctx = b.getContext("2d");
+	var b_ctx = b.getContext("2d");
 	var bevo = new Image();
 	bevo.src = "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F24%2F2020%2F12%2F03%2FGettyImages-1045641844-2000.jpg";
 	bevo.onload = function() {
-	b_context.drawImage(bevo, 100, 20, 100, 100);
+	b_ctx.drawImage(bevo, 100, 20, 100, 100);
 	};
 }
 
@@ -91,6 +91,10 @@ function clear(){
   .page:target {
     left: 0vw;
     z-index: 1;
+}
+img, object{
+    max-height:100%;
+	max-width:100%;
 }
 /* this part adds a border to the canvas so I can see it */
 canvas { border: 1px solid black; }
