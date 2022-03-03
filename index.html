@@ -64,7 +64,7 @@ function myImage(){
 	};
 }
 //this function clears the canvas when I press the button
-function clear() { 
+function goAway() { 
 	var clear_canvas = document.getElementById("myCanvas");
 	var clear_context = clear_canvas.getContext("2d");
 	clear_context.clearRect(1, 1, 200, 100);
@@ -124,7 +124,7 @@ canvas { border: 1px solid black; }
 	<a  onclick="myImage();" class="w3-btn w3-black"> Bevo</a>
 	
 	<!-- this button clears the canvas -->	
-	<a  onclick="clear();" class="w3-btn w3-black"> Clear</a>
+	<a  onclick="goAway();" class="w3-btn w3-black"> Clear</a>
 </div>
 	
 		
